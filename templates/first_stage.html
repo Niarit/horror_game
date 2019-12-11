@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Point & Click horror</title>
+    <script src="{{ url_for('static', filename='changeBackground.js')}}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <audio id="music" src="../static/music.mp3"></audio>
+    <button id="music_btn" onclick="document.getElementById('music').play()">
+        <img src="../static/play.png" alt="meh">
+    </button>
+    <div class="wrapper">
+        <button id="btn" type="submit" onclick="removeBtn(); previousBtn()"> Next </button>
+    </div>
+</body>
+
+</html>
