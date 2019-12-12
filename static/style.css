@@ -31,7 +31,7 @@ body {
     outline: none;
 }
 
-#prevBtn {
+#nextBtn {
     background-color: transparent;
     margin-left: 76%;
     margin-top: 15%;
@@ -42,7 +42,7 @@ body {
     cursor: pointer;
 }
 
-#prevBtn:focus{
+#nextBtn:focus{
     outline: none;
 }
 
