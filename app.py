@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def point_and_click():
-    return render_template('first_stage.html')
+    return render_template('end_stage.html')
+    # return render_template('first_stage.html')
 
 
 if __name__ == '__main__':
