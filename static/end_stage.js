@@ -29,7 +29,14 @@ function bossAge(birthYear) {
 function bossTemplate(boss){
         return `
     <div class= "boss">
-        <img class= "boss-photo" src="${boss.photo}">
+        <div class="btn">
+            <img class= "boss-photo" src="${boss.photo}">
+        </div>
+        <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Right choice</p>
+        </div></div>
         <h2 class="boss-name">${boss.name}</h2>
         <p><strong>Age: </strong>${bossAge(boss.birthYear)}</p>
         <p><strong>Height:</strong>${boss.height}</p>
@@ -37,6 +44,14 @@ function bossTemplate(boss){
     </div>`
 }
 
+
 document.getElementById("app").innerHTML =`
 <h1 class="app-title">Which one stole the Christmas?</h1> 
     ${Bosses.map(bossTemplate).join('')}`
+let bossChoose = document.getElementsByClassName("btn");
+console.log(bossChoose);
+let modal = document.getElementById("myModal");
+bossChoose.onclick = function() {
+modal.style.display = "block";}
+
+
