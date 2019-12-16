@@ -108,8 +108,8 @@ body {
 }
 
 #item3 {
-    background-color: white;
-    margin-left: 50%;
+    background-color: transparent;
+    margin-left: 57%;
     background-repeat: no-repeat;
     color: transparent;
     border: transparent;
@@ -117,8 +117,9 @@ body {
 }
 
 #item4 {
-    background-color: white;
-    margin-left: 55%;
+    background-color: transparent;
+    margin-left: 51%;
+    margin-top: 8%;
     background-repeat: no-repeat;
     color: transparent;
     border: transparent;

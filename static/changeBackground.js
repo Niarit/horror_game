@@ -5,11 +5,15 @@ function changeBg(background) {
     document.body.style.backgroundPosition = "center fix";
 }
 
-function collectItem(id, message, newId) {
+function changeButtonPosition(btnId1, nextId1) {
+    let item1 = document.getElementById(btnId1);
+    item1.setAttribute('id', nextId1);
+}
+
+function collectItem(id, message, newId, img) {
     let item = document.getElementById(id);
     item.addEventListener('click', function () {
         changeText(message);
-        item.setAttribute('id', newId)
     })
 }
 
@@ -26,14 +30,16 @@ function removeBtn(buttonName) {
 function start() {
     let button = document.getElementById('btn');
     button.addEventListener('click', function () {
-        changeBg("https://i.pinimg.com/originals/5c/71/f2/5c71f2087044c0eeb0cf8054964f1e54.jpg");
+        changeBg("https://i.imgur.com/R6Fim3n.jpg");
         changeText("Placeholder2");
         collectItem("item1", 'szia', 'item3');
         collectItem("item2", "henlooo", 'item4');
         button.setAttribute('id', 'nextBtn');
         button.onclick = function () {
-            changeBg("https://www.narcity.com/u/2019/09/13/e9518023ad39d20cb559c217e14f324.jpg_1200x630.jpg");
+            changeBg("https://i.imgur.com/L36UxW0.jpg");
             changeText("Placeholder3");
+            changeButtonPosition('item1', 'item3');
+            changeButtonPosition('item2', 'item4');
             collectItem('item3','hey','item5');
             collectItem('item4', 'yesss', 'item6');
             button.setAttribute('id', 'hallwayBtn');
@@ -41,7 +47,6 @@ function start() {
             nextButton.addEventListener('click',function () {
                 changeBg("https://wallpaperaccess.com/full/1371521.jpg");
                 changeText("Placeholder4");
-                removeBtn('item5');
                 removeBtn('item6');
                 let shatteringGlass = new Audio('../static/breaking-glass.mp3');
                 shatteringGlass.play();
