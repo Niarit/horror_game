@@ -46,3 +46,29 @@ body {
     outline: none;
 }
 
+#hallwayBtn {
+    background-color: transparent;
+    margin-left: 45%;
+    margin-top: 20%;
+    background-repeat:no-repeat;
+    padding:50px;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#hallwayBtn:focus{
+    outline: none;
+}
+
+.box {
+    background-color: black;
+    position: fixed;
+    margin-left: 47%;
+    opacity: 0.5;
+    bottom: 0;
+}
+
+#text {
+    color: white;
+}
