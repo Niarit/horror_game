@@ -72,3 +72,55 @@ body {
 #text {
     color: white;
 }
+
+#toTheEnd {
+    background-color: transparent;
+    margin-left: 50%;
+    margin-top: 20%;
+    background-repeat:no-repeat;
+    padding:50px;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#toTheEnd:focus {
+    outline: none;
+}
+
+#item1 {
+    background-color: transparent;
+    margin-left: 50%;
+    margin-top: 3%;
+    background-repeat: no-repeat;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#item2 {
+    background-color: transparent;
+    margin-left: 95%;
+    background-repeat: no-repeat;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#item3 {
+    background-color: white;
+    margin-left: 50%;
+    background-repeat: no-repeat;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#item4 {
+    background-color: white;
+    margin-left: 55%;
+    background-repeat: no-repeat;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
