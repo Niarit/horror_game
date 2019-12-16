@@ -10,7 +10,7 @@ function changeButtonPosition(btnId1, nextId1) {
     item1.setAttribute('id', nextId1);
 }
 
-function collectItem(id, message, newId, img) {
+function collectItem(id, message) {
     let item = document.getElementById(id);
     item.addEventListener('click', function () {
         changeText(message);
@@ -45,12 +45,18 @@ function start() {
             button.setAttribute('id', 'hallwayBtn');
             let nextButton = document.getElementById("hallwayBtn");
             nextButton.addEventListener('click',function () {
-                changeBg("https://wallpaperaccess.com/full/1371521.jpg");
+                changeBg("https://i.imgur.com/DTaLHkX.jpg");
                 changeText("Placeholder4");
-                removeBtn('item6');
+                removeBtn('item3');
+                changeButtonPosition('item4', 'item6');
+                collectItem('item6', 'last');
                 let shatteringGlass = new Audio('../static/breaking-glass.mp3');
                 shatteringGlass.play();
-                nextButton.setAttribute('id', 'toTheEnd')
+                nextButton.setAttribute('id', 'toTheEnd');
+                let lastButton = document.getElementById('toTheEnd');
+                lastButton.addEventListener("click", function () {
+                    location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                })
             })
         }
     })

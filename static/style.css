@@ -90,38 +90,74 @@ body {
 
 #item1 {
     background-color: transparent;
-    margin-left: 50%;
-    margin-top: 3%;
+    margin-left: 47%;
+    margin-top: 1%;
+    padding: 15px;
     background-repeat: no-repeat;
     color: transparent;
     border: transparent;
     cursor: pointer;
 }
 
+#item1:focus{
+    outline: none;
+}
+
 #item2 {
     background-color: transparent;
     margin-left: 95%;
+    margin-top: -3%;
     background-repeat: no-repeat;
+    padding: 15px;
     color: transparent;
     border: transparent;
     cursor: pointer;
+}
+
+#item2:focus{
+    outline: none;
 }
 
 #item3 {
     background-color: transparent;
     margin-left: 57%;
     background-repeat: no-repeat;
+    padding: 15px;
     color: transparent;
     border: transparent;
     cursor: pointer;
+}
+
+#item3:focus{
+    outline: none;
 }
 
 #item4 {
     background-color: transparent;
     margin-left: 51%;
     margin-top: 8%;
+    padding: 15px;
     background-repeat: no-repeat;
     color: transparent;
     border: transparent;
     cursor: pointer;
+}
+
+#item4:focus{
+    outline: none;
+}
+
+#item6 {
+    background-color: transparent;
+    margin-left: 85%;
+    margin-top: 14%;
+    padding: 47px;
+    background-repeat: no-repeat;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#item6:focus{
+    outline: none;
 }
