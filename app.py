@@ -15,5 +15,6 @@ def front_page():
     return render_template('end_stage.html')
 
 
+
 if __name__ == '__main__':
     app.run()
