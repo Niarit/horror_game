@@ -10,7 +10,6 @@ def point_and_click():
 
 @app.route('/')
 def front_page():
-    # return render_template('front_page.html')
     return render_template('end_stage.html')
 
 

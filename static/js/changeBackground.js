@@ -1,17 +1,21 @@
 
-let story = {first: 'hey',
+let story = {
+    first: 'hey',
     second: 'alyoo',
     third:'yess',
-    fourth: 'here'};
+    fourth: 'here'
+};
 
-let items = {hat:'hat',
+let items = {
+    hat:'hat',
     fur: 'fur ball',
     knife: 'knife',
     foot:'footprint',
-    elf: 'elf' };
+    elf: 'elf'
+};
 
 function changeBg(background) {
-    document.body.style.backgroundImage = 'url(' + background + ')';
+    document.body.style.backgroundImage = `url(${background})`;
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundPosition = "center fix";
 }
@@ -40,7 +44,7 @@ function removeBtn(buttonName) {
 
 function start() {
     let button = document.getElementById('btn');
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function (e) {
         try {
             changeBg("https://i.imgur.com/R6Fim3n.jpg");
             changeText(story.first);
@@ -76,7 +80,7 @@ function start() {
                 nextButton.setAttribute('id', 'toTheEnd');
                 let lastButton = document.getElementById('toTheEnd');
                 lastButton.addEventListener("click", function () {
-                    location.href = "http://127.0.0.1:5000/end"
+                    location.href = "http://127.0.0.1:5000/end";
                 })
             })
         }
