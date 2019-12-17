@@ -41,8 +41,6 @@ img {
 }
 
 body {font-family: Arial, Helvetica, sans-serif;}
-
-/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -54,72 +52,38 @@ body {font-family: Arial, Helvetica, sans-serif;}
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s
 }
 
-/* Modal Content */
-.modal-content {
-  position: fixed;
-  bottom: 0;
-  background-color: #fefefe;
-  width: 100%;
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
-  animation-duration: 0.4s
+/* Modal Content/Box */
+.modal-content-lose {
+  background-color: red;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button */
+.modal-content-win {
+  background-color: green;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+}
+
 .close {
-  color: white;
+  color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: whitesmoke;
+  color: black;
   text-decoration: none;
   cursor: pointer;
 }
 
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-/* Add Animation */
-@-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}
-
-@keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}
-
-@-webkit-keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-
+.result {font-size: 25px;
+  font-family: "DejaVu Serif"}

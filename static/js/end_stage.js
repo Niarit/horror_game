@@ -30,11 +30,14 @@ function renderBoss(boss) {
     return `
     <div class= "boss">
         <img class="boss-photo" src="${boss.photo}">
-        <div id="myModal" class="modal">
-        <div class="modal-content">
+            <div id="loseModal" class="modal">
+            <div class="modal-content-lose">
             <span class="close">&times;</span>
-            <p>Right choice</p>
-        </div></div>
+            <p class="result">It wasn't me :(</p></div></div>
+            
+            <div id="winModal" class="modal">
+            <div class="modal-content-win">
+            <p class="result">Ho-ho-ho, you got me! The truth is that I hate christmas! </p></div></div>
         <h2 class="boss-name">${boss.name}</h2>
         <p><strong>Age: </strong>${bossAge(boss.birthYear)}</p>
         <p><strong>Height:</strong>${boss.height}</p>
@@ -42,16 +45,29 @@ function renderBoss(boss) {
     </div>`
 }
 
+function init() {
+    document.getElementById("app").innerHTML = `
+    <h1 class="app-title">Which one stole the Christmas?</h1> 
+        ${Bosses.map(renderBoss).join('')}`
+    let bossChoose = document.querySelectorAll(".boss-photo");
+    let losemodal = document.getElementById("loseModal");
+    let winmodal = document.getElementById("winModal")
+    let span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+      losemodal.style.display = "none";
+    };
+    window.onclick = function(event) {
+      if (event.target === winmodal) {
+        winmodal.style.display = "none";
+      }
+    };
+    for (let photo of bossChoose){
+        if (photo === bossChoose[2]){
+                photo.onclick = function () {
+                winmodal.style.display = "block";}}
+        else{
+        photo.onclick = function () {
+        losemodal.style.display = "block";
+    }}}}
 
-document.getElementById("app").innerHTML = `
-<h1 class="app-title">Which one stole the Christmas?</h1> 
-    ${Bosses.map(renderBoss).join('')}`
-let bossChoose = document.querySelectorAll(".boss-photo");
-console.log(bossChoose);
-let modal = document.getElementById("myModal");
-for (let photo of bossChoose){
-    photo.onclick = function () {
-    modal.style.display = "block";
-}}
-
-
+init()
