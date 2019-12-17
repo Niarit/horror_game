@@ -30,10 +30,15 @@ function renderBoss(boss) {
     return `
     <div class= "boss">
         <img class="boss-photo" src="${boss.photo}">
-            <div id="loseModal" class="modal">
+            <div id="loseModalElf" class="modal">
             <div class="modal-content-lose">
-            <span class="close">&times;</span>
-            <p class="result">It wasn't me :(</p></div></div>
+            <span class="close1">&times;</span>
+            <p class="result">I am the Elf, and it wasn't me :(</p></div></div>
+            
+            <div id="loseModalGrinch" class="modal">
+            <div class="modal-content-lose">
+            <span class="close2">&times;</span>
+            <p class="result">I am the Grinch, and it wasn't me :(</p></div></div>
             
             <div id="winModal" class="modal">
             <div class="modal-content-win">
@@ -50,12 +55,20 @@ function init() {
     <h1 class="app-title">Which one stole the Christmas?</h1> 
         ${Bosses.map(renderBoss).join('')}`
     let bossChoose = document.querySelectorAll(".boss-photo");
-    let losemodal = document.getElementById("loseModal");
+    let losemodalElf = document.getElementById("loseModalElf");
+    let losemodalGrinch = document.getElementById("loseModalGrinch");
     let winmodal = document.getElementById("winModal")
-    let span = document.getElementsByClassName("close")[0];
-    span.onclick = function() {
-      losemodal.style.display = "none";
+    let span1 = document.getElementsByClassName("close1")[0];
+    let span2 = document.getElementsByClassName("close2")[0];
+
+    span1.onclick = function() {
+      losemodalElf.style.display = "none";
     };
+
+    span2.onclick = function() {
+      losemodalGrinch.style.display = "none";
+    };
+
     window.onclick = function(event) {
       if (event.target === winmodal) {
         winmodal.style.display = "none";
@@ -65,9 +78,11 @@ function init() {
         if (photo === bossChoose[2]){
                 photo.onclick = function () {
                 winmodal.style.display = "block";}}
-        else{
-        photo.onclick = function () {
-        losemodal.style.display = "block";
-    }}}}
+        else if (photo === bossChoose[1]){
+                photo.onclick = function () {
+                losemodalGrinch.style.display = "block";}}
+        else {photo.onclick = function () {
+                losemodalElf.style.display = "block";}}
+    }}
 
 init()
