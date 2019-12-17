@@ -6,8 +6,8 @@ function changeBg(background) {
 }
 
 function changeButtonPosition(btnId1, nextId1) {
-    let item1 = document.getElementById(btnId1);
-    item1.setAttribute('id', nextId1);
+    let item = document.getElementById(btnId1);
+    item.setAttribute('id', nextId1);
 }
 
 function collectItem(id, message) {
@@ -30,19 +30,29 @@ function removeBtn(buttonName) {
 function start() {
     let button = document.getElementById('btn');
     button.addEventListener('click', function () {
-        changeBg("https://i.imgur.com/R6Fim3n.jpg");
-        changeText("Placeholder2");
-        collectItem("item1", 'szia', 'item3');
-        collectItem("item2", "henlooo", 'item4');
-        button.setAttribute('id', 'nextBtn');
+        try {
+            changeBg("https://i.imgur.com/R6Fim3n.jpg");
+            changeText("Placeholder2");
+            collectItem("item1", 'szia', 'item3');
+            collectItem("item2", "henlooo", 'item4');
+            button.setAttribute('id', 'nextBtn');
+        }
+        catch (e) {
+            console.log('This error occurs because of the bubbling effect')
+        }
         button.onclick = function () {
-            changeBg("https://i.imgur.com/L36UxW0.jpg");
-            changeText("Placeholder3");
-            changeButtonPosition('item1', 'item3');
-            changeButtonPosition('item2', 'item4');
-            collectItem('item3','hey','item5');
-            collectItem('item4', 'yesss', 'item6');
-            button.setAttribute('id', 'hallwayBtn');
+            try {
+                changeBg("https://i.imgur.com/L36UxW0.jpg");
+                changeText("Placeholder3");
+                changeButtonPosition('item1', 'item3');
+                changeButtonPosition('item2', 'item4');
+                collectItem('item3', 'hey', 'item5');
+                collectItem('item4', 'yesss', 'item6');
+                button.setAttribute('id', 'hallwayBtn');
+            }
+            catch (e) {
+                console.log('This error occurs because of the bubbling effect')
+            }
             let nextButton = document.getElementById("hallwayBtn");
             nextButton.addEventListener('click',function () {
                 changeBg("https://i.imgur.com/DTaLHkX.jpg");
