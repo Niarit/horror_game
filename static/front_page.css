@@ -1,0 +1,51 @@
+body {
+  background: url("../static/front_page_bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#x-mas {
+  background-color: transparent;
+  border: transparent;
+  padding: 85px;
+  margin-top: 13%;
+  margin-left: 23%;
+  cursor: pointer;
+}
+
+#new-year{
+  background-color: transparent;
+  border: transparent;
+  padding: 85px;
+  margin-top: 13%;
+  margin-left: 33%;
+  cursor: pointer;
+}
+
+.front_button{
+  float: left;
+  margin-right: 5px;
+}
+
+.front_text{
+  float: left;
+  margin-left: 5px;
+}
+
+#x-mas_text{
+  font-family: 'Permanent Marker', cursive;
+  color: #9C1A1C;
+  margin-top: 5%;
+  margin-left: 21%;
+  font-size: large;
+}
+
+#new-year_text{
+  font-family: 'Permanent Marker', cursive;
+  color: #9C1A1C;
+  margin-top: 5%;
+  margin-left: 32%;
+  font-size: large;
+}
