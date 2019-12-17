@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route('/game')
 def point_and_click():
+    #return render_template('end_stage.html')
     return render_template('first_stage.html')
 
 
