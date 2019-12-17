@@ -1,4 +1,15 @@
 
+let story = {first: 'hey',
+    second: 'alyoo',
+    third:'yess',
+    fourth: 'here'};
+
+let items = {hat:'hat',
+    fur: 'fur ball',
+    knife: 'knife',
+    foot:'footprint',
+    elf: 'elf' };
+
 function changeBg(background) {
     document.body.style.backgroundImage = 'url(' + background + ')';
     document.body.style.backgroundRepeat = "no-repeat";
@@ -32,9 +43,9 @@ function start() {
     button.addEventListener('click', function () {
         try {
             changeBg("https://i.imgur.com/R6Fim3n.jpg");
-            changeText("Placeholder2");
-            collectItem("item1", 'szia', 'item3');
-            collectItem("item2", "henlooo", 'item4');
+            changeText(story.first);
+            collectItem("item1", items.hat, 'item3');
+            collectItem("item2", items.fur, 'item4');
             button.setAttribute('id', 'nextBtn');
         }
         catch (e) {
@@ -43,11 +54,11 @@ function start() {
         button.onclick = function () {
             try {
                 changeBg("https://i.imgur.com/L36UxW0.jpg");
-                changeText("Placeholder3");
+                changeText(story.second);
                 changeButtonPosition('item1', 'item3');
                 changeButtonPosition('item2', 'item4');
-                collectItem('item3', 'hey', 'item5');
-                collectItem('item4', 'yesss', 'item6');
+                collectItem('item3', items.knife, 'item5');
+                collectItem('item4', items.foot, 'item6');
                 button.setAttribute('id', 'hallwayBtn');
             }
             catch (e) {
@@ -56,10 +67,10 @@ function start() {
             let nextButton = document.getElementById("hallwayBtn");
             nextButton.addEventListener('click',function () {
                 changeBg("https://i.imgur.com/DTaLHkX.jpg");
-                changeText("Placeholder4");
+                changeText(story.third);
                 removeBtn('item3');
                 changeButtonPosition('item4', 'item6');
-                collectItem('item6', 'last');
+                collectItem('item6', items.elf);
                 let shatteringGlass = new Audio('../static/breaking-glass.mp3');
                 shatteringGlass.play();
                 nextButton.setAttribute('id', 'toTheEnd');
