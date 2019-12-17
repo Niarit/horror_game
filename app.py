@@ -13,5 +13,10 @@ def front_page():
     return render_template('front_page.html')
 
 
+@app.route('/end')
+def end_stage():
+    return render_template('end_stage.html')
+
+
 if __name__ == '__main__':
     app.run()
