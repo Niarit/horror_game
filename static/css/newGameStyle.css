@@ -1,0 +1,184 @@
+body{
+  background: url("/static/door2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+p {
+    font-size: 150%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#music_btn{
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none
+}
+
+
+#btn {
+  background-color: transparent;
+    margin-left: 42%;
+    margin-top: 20%;
+  background-repeat:no-repeat;
+  padding:160px;
+  color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#btn:focus{
+    outline: none;
+}
+
+#next {
+    background-color: transparent;
+    margin-left: 47%;
+    margin-top: 15%;
+    background-repeat:no-repeat;
+    padding:90px;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#next:focus{
+    outline: none;
+}
+
+#hallway {
+    background-color: transparent;
+    margin-left: 56%;
+    margin-top: 28%;
+    background-repeat:no-repeat;
+    padding:50px;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#hallway:focus{
+    outline: none;
+}
+
+.box {
+    background-color: black;
+    position: fixed;
+    margin-left: 23%;
+    opacity: 0.5;
+    bottom: 0;
+}
+
+#text {
+    color: white;
+}
+
+#end {
+    background-color: transparent;
+    margin-left: 41%;
+    margin-top: 5%;
+    background-repeat:no-repeat;
+    padding: 146px;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#end:focus {
+    outline: none;
+}
+
+#item1 {
+    background-color: transparent;
+    margin-left: 55%;
+    margin-top: 5%;
+    padding: 15px;
+    background-repeat: no-repeat;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#item1:focus{
+    outline: none;
+}
+
+#item2 {
+    background-color: transparent;
+    margin-left: 38%;
+    margin-top: 5%;
+    background-repeat: no-repeat;
+    padding: 15px;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#item2:focus{
+    outline: none;
+}
+
+#item3 {
+    background-color: transparent;
+    margin-left: 12%;
+    margin-bottom: -5%;
+    background-repeat: no-repeat;
+    padding: 97px;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#item3:focus{
+    outline: none;
+}
+
+#item4 {
+    background-color: transparent;
+    margin-left: 37%;
+    padding: 15px;
+    background-repeat: no-repeat;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#item4:focus{
+    outline: none;
+}
+
+#item5 {
+    background-color: transparent;
+    margin-left: 64%;
+    margin-top: 21%;
+    padding: 47px;
+    background-repeat: no-repeat;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#item5:focus{
+    outline: none;
+}
+
+#item6 {
+    background-color: transparent;
+    margin-left: 85%;
+    margin-top: 14%;
+    padding: 47px;
+    background-repeat: no-repeat;
+    color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#item6:focus{
+    outline: none;
+}
