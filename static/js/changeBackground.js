@@ -1,17 +1,24 @@
 
 let story = {
-    first: 'hey',
-    second: 'alyoo',
-    third:'yess',
-    fourth: 'here'
+    first: `This is the room of the elves working in the Christmas Factory.<br> 
+Or at least it was. After the crime has been made many of the elves found missing.<br>
+Now this and many other rooms in the facility are fully abandoned.`,
+    second: `The hallway of the Christmas Factory. The walls are cold and many started to ruin.<br>
+It seems as the work itself stopped in a moment and every worker just left, leaving everything behind.<br>
+Whoever stole the holiday was able to scare the elves into doing his bidding.`,
+    third:`Snow-less landscape stretching in every direction before you.<br>
+The rustling of fallen leaves and some strange noise echoes through your head.<br>
+The footsteps leaded you to a dead end as if whoever came through just flew away.`
 };
 
 let items = {
-    hat:'hat',
-    fur: 'fur ball',
-    knife: 'knife',
-    foot:'footprint',
-    elf: 'elf'
+    hat:`A warm red hat, too big for an elf. When you grab it some green fur falls out`,
+    fur: `Some green fur. The odor of it makes you gag.`,
+    knife: `A knife with remainders of a cake on it, which means it was recently used.  No fingerprints though`,
+    foot:`The floor is broken on a spot and there are several footprints around it.<br>
+You also felt how unstable the flooring is - cracking and moving under your steps - but to this damage you'd need more weight`,
+    elf: `Under some fallen leaves was an elf. He was unconscious, but alive.<br> 
+It seems someone punched him pretty hard in the face. Whoever did it, must have been way bigger then the elf`
 };
 
 function changeBg(background) {
