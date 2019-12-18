@@ -1,3 +1,4 @@
+import{dataHandler} from "./datahandler.js";
 
 let story = {
     first: `This is the room of the elves working in the Christmas Factory.<br> 
@@ -21,42 +22,15 @@ You also felt how unstable the flooring is - cracking and moving under your step
 It seems someone punched him pretty hard in the face. Whoever did it, must have been way bigger then the elf.`
 };
 
-function changeBg(background) {
-    document.body.style.backgroundImage = `url(${background})`;
-    document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundPosition = "center fix";
-}
-
-function changeButtonPosition(btnId1, nextId1) {
-    let item = document.getElementById(btnId1);
-    item.setAttribute('id', nextId1);
-}
-
-function collectItem(id, message) {
-    let item = document.getElementById(id);
-    item.addEventListener('click', function () {
-        changeText(message);
-    })
-}
-
-function changeText(newText) {
-    let text = document.getElementById("text");
-    text.innerHTML = newText
-}
-
-function removeBtn(buttonName) {
-    let button = document.getElementById(buttonName);
-    button.remove()
-}
 
 function start() {
     let button = document.getElementById('btn');
     button.addEventListener('click', function (e) {
         try {
-            changeBg("https://i.imgur.com/R6Fim3n.jpg");
-            changeText(story.first);
-            collectItem("item1", items.hat, 'item3');
-            collectItem("item2", items.fur, 'item4');
+            dataHandler._changeBg("https://i.imgur.com/R6Fim3n.jpg");
+            dataHandler._changeText(story.first);
+            dataHandler._collectItem("item1", items.hat, 'item3');
+            dataHandler._collectItem("item2", items.fur, 'item4');
             button.setAttribute('id', 'nextBtn');
         }
         catch (e) {
@@ -64,12 +38,12 @@ function start() {
         }
         button.onclick = function () {
             try {
-                changeBg("https://i.imgur.com/L36UxW0.jpg");
-                changeText(story.second);
-                changeButtonPosition('item1', 'item3');
-                changeButtonPosition('item2', 'item4');
-                collectItem('item3', items.knife, 'item5');
-                collectItem('item4', items.foot, 'item6');
+                dataHandler._changeBg("https://i.imgur.com/L36UxW0.jpg");
+                dataHandler._changeText(story.second);
+                dataHandler._changeButtonPos('item1', 'item3');
+                dataHandler._changeButtonPos('item2', 'item4');
+                dataHandler._collectItem('item3', items.knife, 'item5');
+                dataHandler._collectItem('item4', items.foot, 'item6');
                 button.setAttribute('id', 'hallwayBtn');
             }
             catch (e) {
@@ -77,11 +51,11 @@ function start() {
             }
             let nextButton = document.getElementById("hallwayBtn");
             nextButton.addEventListener('click',function () {
-                changeBg("https://i.imgur.com/DTaLHkX.jpg");
-                changeText(story.third);
-                removeBtn('item3');
-                changeButtonPosition('item4', 'item6');
-                collectItem('item6', items.elf);
+                dataHandler._changeBg("https://i.imgur.com/DTaLHkX.jpg");
+                dataHandler._changeText(story.third);
+                dataHandler._removeBtn('item3');
+                dataHandler._changeButtonPos('item4', 'item6');
+                dataHandler._collectItem('item6', items.elf);
                 let shatteringGlass = new Audio('../static/breaking-glass.mp3');
                 shatteringGlass.play();
                 nextButton.setAttribute('id', 'toTheEnd');
