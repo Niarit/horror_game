@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Point&Click Horror games</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='front_page.css')}}">
+</head>
+<body>
+    <div>
+        <p>Choose your Adventure</p>
+    </div>
+    <p class="front_text" id="x-mas_text">Who stole the Christmas?</p>
+    <p class="front_text" id="new-year_text">New Year massacre</p>
+    <div>
+        <button id="x-mas" class="front_button" type="submit" onclick="window.location.href = 'http://127.0.0.1:5000/game-christmas'"></button>
+    </div>
+    <div>
+        <button id="new-year" class="front_button" type="submit" onclick="window.location.href = 'http://127.0.0.1:5000/game-new-year';"></button>
+    </div>
+</body>
+</html>
