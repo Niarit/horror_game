@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.button{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.ok-button{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.textview{
+    width: 150px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+    border: none;
+    color: red;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    background: black;
+    border: 40px solid black;
+    border-radius: 10px;
+}
+.bg{
+    background-color: white;
+    height:  140vh;
+}
