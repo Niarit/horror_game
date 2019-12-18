@@ -3,9 +3,14 @@ from flask import Flask, render_template, request, redirect, send_from_directory
 app = Flask(__name__)
 
 
-@app.route('/game')
+@app.route('/game-christmas')
 def point_and_click():
     return render_template('first_stage.html')
+
+
+@app.route('/game-new-year')
+def new_year_massacre():
+    return render_template('first_room.html')
 
 
 @app.route('/')
