@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>End room</title>
+    <script type="module" src="{{ url_for('static', filename='js/end_room.js')}}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/end_room.css')}}">
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="main">
+        <form name="form">
+            <input class="textview" name="textview">
+        </form>
+        <table>
+            <tr>
+                <td><input class="button" type="button" value="1" /></td>
+                <td><input class="button" type="button" value="2" /></td>
+                <td><input class="button" type="button" value="3"/></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="4" /></td>
+                <td><input class="button" type="button" value="5" /></td>
+                <td><input class="button" type="button" value="6" /></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="7" /></td>
+                <td><input class="button" type="button" value="8" /></td>
+                <td><input class="button" type="button" value="9" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="ok-button" style="width: 106px" type="button" value="OK" /></td>
+                <td><input class="button" type="button" value="0" onclick="insert(0)"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

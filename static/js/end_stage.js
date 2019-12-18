@@ -22,11 +22,6 @@ const Bosses = [{
         height: " 180cm",
     }];
 
-function bossAge(birthYear) {
-    let Age = new Date().getFullYear() - birthYear;
-    return `${Age} years old`
-
-}
 
 function init() {
     document.getElementById("app").innerHTML = `
