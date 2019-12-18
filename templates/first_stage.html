@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Point & Click horror</title>
-    <script src="{{ url_for('static', filename='changeBackground.js')}}" defer></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <script src="{{ url_for('static', filename='js/changeBackground.js')}}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
 </head>
 <body>
     <audio id="music" src="../static/music.mp3"></audio>
@@ -14,7 +14,12 @@
     <div class="wrapper">
         <button id="btn" type="button"></button>
         <div class="box">
-            <p id="text">Placeholder</p>
+            <p id="text">No one ever heard of something like this before.<br>
+                The sheer strangeness of it makes everyone thinking about it dizzy.<br>
+                As a detective though you heard and saw many strange things, but this made you confused as well.<br>
+                Someone stole the Christmas! The gifts, the trees, the festive mood... even the days from the calendar are gone.<br>
+                Your job is to find out who did this.<br>
+                Your suspects and clues lead you there, but will you be able to find the answer?</p>
         </div>
         <button id="item1">Item</button>
         <button id="item2">Item</button>

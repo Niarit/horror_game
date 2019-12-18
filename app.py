@@ -3,9 +3,19 @@ from flask import Flask, render_template, request, redirect, send_from_directory
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/game')
 def point_and_click():
     return render_template('first_stage.html')
+
+
+@app.route('/')
+def front_page():
+    return render_template('front_page.html')
+
+
+@app.route('/end')
+def end_stage():
+    return render_template('end_stage.html')
 
 
 if __name__ == '__main__':
