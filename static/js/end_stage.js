@@ -1,3 +1,5 @@
+import{dataHandler} from "./datahandler.js";
+
 const Bosses = [{
     name: "Christmas Elf",
     birthYear: "1850",
@@ -26,34 +28,10 @@ function bossAge(birthYear) {
 
 }
 
-function renderBoss(boss) {
-    return `
-    <div class= "boss">
-        <img class="boss-photo" src="${boss.photo}">
-            <div id="loseModalElf" class="modal">
-            <div class="modal-content-lose">
-            <span class="close1">&times;</span>
-            <p class="result">I am the Elf, and it wasn't me :(</p></div></div>
-            
-            <div id="loseModalGrinch" class="modal">
-            <div class="modal-content-lose">
-            <span class="close2">&times;</span>
-            <p class="result">I am the Grinch, and it wasn't me :(</p></div></div>
-            
-            <div id="winModal" class="modal">
-            <div class="modal-content-win">
-            <p class="result">Ho-ho-ho, you got me! The truth is that I hate christmas! </p></div></div>
-        <h2 class="boss-name">${boss.name}</h2>
-        <p><strong>Age: </strong>${bossAge(boss.birthYear)}</p>
-        <p><strong>Height:</strong>${boss.height}</p>
-        <p><strong>Weight:</strong>${boss.weight}</p>
-    </div>`
-}
-
 function init() {
     document.getElementById("app").innerHTML = `
     <h1 class="app-title">Which one stole the Christmas?</h1> 
-        ${Bosses.map(renderBoss).join('')}`
+        ${Bosses.map(dataHandler._renderBoss).join('')}`
     let bossChoose = document.querySelectorAll(".boss-photo");
     let losemodalElf = document.getElementById("loseModalElf");
     let losemodalGrinch = document.getElementById("loseModalGrinch");
