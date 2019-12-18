@@ -29,8 +29,8 @@ function start() {
         try {
             dataHandler._changeBg("https://i.imgur.com/R6Fim3n.jpg");
             dataHandler._changeText(story.first);
-            dataHandler._collectItem("item1", items.hat, 'item3');
-            dataHandler._collectItem("item2", items.fur, 'item4');
+            dataHandler._collectItem("item1", items.hat);
+            dataHandler._collectItem("item2", items.fur);
             button.setAttribute('id', 'nextBtn');
         }
         catch (e) {
@@ -42,8 +42,8 @@ function start() {
                 dataHandler._changeText(story.second);
                 dataHandler._changeButtonPos('item1', 'item3');
                 dataHandler._changeButtonPos('item2', 'item4');
-                dataHandler._collectItem('item3', items.knife, 'item5');
-                dataHandler._collectItem('item4', items.foot, 'item6');
+                dataHandler._collectItem('item3', items.knife);
+                dataHandler._collectItem('item4', items.foot);
                 button.setAttribute('id', 'hallwayBtn');
             }
             catch (e) {

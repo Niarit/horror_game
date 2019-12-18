@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>New year massacre</title>
+    <script type="module" src="{{ url_for('static', filename='js/newGame.js')}}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/newGameStyle.css')}}">
 </head>
 <body>
-
+    <audio id="music" src="../static/music2.mp3"></audio>
+    <button id="music_btn" onclick="document.getElementById('music').play()">
+        <img src="../static/play.png" alt="meh">
+    </button>
+    <div class="wrapper">
+        <button id="btn" type="button"></button>
+        <div class="box">
+            <p id="text">placeholder</p>
+        </div>
+    </div>
+    <div><button id="item1">Item</button></div>
+    <div><button id="item2">Item</button></div>
 </body>
 </html>
