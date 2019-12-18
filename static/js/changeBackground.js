@@ -18,7 +18,7 @@ let items = {
     foot:`The floor is broken on a spot and there are several footprints around it.<br>
 You also felt how unstable the flooring is - cracking and moving under your steps - but to this damage you'd need more weight`,
     elf: `Under some fallen leaves was an elf. He was unconscious, but alive.<br> 
-It seems someone punched him pretty hard in the face. Whoever did it, must have been way bigger then the elf`
+It seems someone punched him pretty hard in the face. Whoever did it, must have been way bigger then the elf.`
 };
 
 function changeBg(background) {
