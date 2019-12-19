@@ -19,3 +19,13 @@ body {
 #lose:focus{
     outline: none;
 }
+
+#back {
+    background-color: black;
+    color: #9C1A1C;
+    font-family: 'Permanent Marker', cursive;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 200%;
+    border: black;
+}
