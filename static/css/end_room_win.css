@@ -43,7 +43,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 .modal-content-win {
-  background-color: green;
+  background-color: black;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
@@ -52,8 +52,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 
 
-.result {font-size: 25px;
-  font-family: "DejaVu Serif", sans-serif}
+.result {font-size: 50px;
+  color: #9C1A1C;
+  font-family: 'Permanent Marker', cursive;}
 
 
 #back {
