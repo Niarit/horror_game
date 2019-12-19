@@ -26,11 +26,11 @@ const Bosses = [{
 function init() {
     document.getElementById("app").innerHTML = `
     <h1 class="app-title">Which one stole the Christmas?</h1> 
-        ${Bosses.map(dataHandler._renderBoss).join('')}`
+        ${Bosses.map(dataHandler._renderBoss).join('')}`;
     let bossChoose = document.querySelectorAll(".boss-photo");
     let losemodalElf = document.getElementById("loseModalElf");
     let losemodalGrinch = document.getElementById("loseModalGrinch");
-    let winmodal = document.getElementById("winModal")
+    let winmodal = document.getElementById("winModal");
     let span1 = document.getElementsByClassName("close1")[0];
     let span2 = document.getElementsByClassName("close2")[0];
 
@@ -58,4 +58,4 @@ function init() {
                 losemodalElf.style.display = "block";}}
     }}
 
-init()
+init();
