@@ -58,7 +58,7 @@ function init() {
                 nextButton.setAttribute('id','end');
                 let lastButton = document.getElementById('end');
                 lastButton.addEventListener("click",function () {
-                    location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    location.href = "http://127.0.0.1:5000/end-room";
                 })
             })
         }
