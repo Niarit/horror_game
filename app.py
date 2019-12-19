@@ -28,7 +28,7 @@ def end_room():
     return render_template('end_room.html')
 
 
-@app.route('/new-game-end2')
+@app.route('/new-game-end-2')
 def new_game_end2():
     return render_template('end_room_win.html')
 
@@ -36,7 +36,6 @@ def new_game_end2():
 @app.route('/new-game-end-1')
 def loose_ending():
     return render_template('end_room_lose.html')
-
 
 
 if __name__ == '__main__':
