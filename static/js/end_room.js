@@ -8,7 +8,7 @@ for (let button of buttons){
 
 const okButton = document.querySelector(".ok-button");
 okButton.addEventListener('click',function () {
-    if (document.form.textview.value == 2811){
+    if (document.form.textview.value == 1811){
         location.href = "http://127.0.0.1:5000/new-game-end-2";
     }else{
         location.href = "http://127.0.0.1:5000/new-game-end-1";
