@@ -44,9 +44,13 @@ export let dataHandler = {
             <div class="modal-content-win">
             <p class="result">Ho-ho-ho, you got me! The truth is that I hate christmas! </p></div></div>
         <h2 class="boss-name">${boss.name}</h2>
-        <p><strong>Age: </strong>${bossAge(boss.birthYear)}</p>
+        <p><strong>Age: </strong>${dataHandler._bossAge(boss.birthYear)}</p>
         <p><strong>Height:</strong>${boss.height}</p>
         <p><strong>Weight:</strong>${boss.weight}</p>
     </div>`
-    }
+    },
+    _bossAge: function (birthYear) {
+    let Age = new Date().getFullYear() - birthYear;
+    return `${Age} years old`
+    },
 };
