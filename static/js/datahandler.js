@@ -53,4 +53,8 @@ export let dataHandler = {
     let Age = new Date().getFullYear() - birthYear;
     return `${Age} years old`
     },
+    _playSound: function () {
+        let scream = new Audio('../static/jumpscare.mp3');
+        scream.play();
+    }
 };
