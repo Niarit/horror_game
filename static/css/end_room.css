@@ -35,7 +35,11 @@
     border: 40px solid black;
     border-radius: 10px;
 }
-.bg{
-    background-color: white;
-    height:  140vh;
+
+body{
+    background: url("/static/terminal_bg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }

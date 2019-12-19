@@ -57,6 +57,7 @@ function init() {
                 dataHandler._collectItem('item5', items.riddle3);
                 nextButton.setAttribute('id','end');
                 let lastButton = document.getElementById('end');
+                lastButton.value = `Back to main menu`;
                 lastButton.addEventListener("click",function () {
                     location.href = "http://127.0.0.1:5000/end-room";
                 })
