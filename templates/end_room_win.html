@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <title>End Room Win</title>
     <script type="module" src="{{ url_for('static', filename='js/end_room_win.js')}}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/end_room_win.css')}}">
 </head>
 <body>
-    <div id="winModal" class="modal">
-        <div class="modal-content-win">
-            <p class="result">Good choice, you survived!</p>
+    <button id="win">Win the game</button>
+        <div id="winModal" class="modal">
+            <div class="modal-content-win">
+                <p class="result">Good choice, you survived!</p>
+            </div>
         </div>
-    </div>
 </body>
 </html>

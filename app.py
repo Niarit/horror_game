@@ -23,5 +23,15 @@ def end_stage():
     return render_template('end_stage.html')
 
 
+@app.route('/end-room')
+def end_room():
+    return render_template('end_room.html')
+
+
+@app.route('/new-game-end2')
+def new_game_end2():
+    return render_template('end_room_win.html')
+
+
 if __name__ == '__main__':
     app.run()
