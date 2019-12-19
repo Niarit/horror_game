@@ -42,6 +42,7 @@ export let dataHandler = {
             
             <div id="winModal" class="modal">
             <div class="modal-content-win">
+            <span class="close3">&times;</span>
             <p class="result">Ho-ho-ho, you got me! The truth is that I hate christmas! </p></div></div>
         <h2 class="boss-name">${boss.name}</h2>
         <p><strong>Age: </strong>${dataHandler._bossAge(boss.birthYear)}</p>
