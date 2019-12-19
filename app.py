@@ -23,5 +23,10 @@ def end_stage():
     return render_template('end_stage.html')
 
 
+@app.route('/new-game-end-1')
+def loose_ending():
+    return render_template('end_room_lose.html')
+
+
 if __name__ == '__main__':
     app.run()
