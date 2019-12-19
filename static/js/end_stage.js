@@ -30,9 +30,10 @@ function init() {
     let bossChoose = document.querySelectorAll(".boss-photo");
     let losemodalElf = document.getElementById("loseModalElf");
     let losemodalGrinch = document.getElementById("loseModalGrinch");
-    let winmodal = document.getElementById("winModal");
-    let span1 = document.getElementsByClassName("close1")[0];
-    let span2 = document.getElementsByClassName("close2")[0];
+    let winmodal = document.getElementById("winModal")
+    let span1 = document.querySelector(".close1");
+    let span2 = document.querySelector(".close2");
+    let span3 = document.querySelector(".close3");
 
     span1.onclick = function() {
       losemodalElf.style.display = "none";
@@ -42,11 +43,10 @@ function init() {
       losemodalGrinch.style.display = "none";
     };
 
-    window.onclick = function(event) {
-      if (event.target === winmodal) {
-        winmodal.style.display = "none";
-      }
+    span3.onclick = function() {
+      winmodal.style.display = "none";
     };
+
     for (let photo of bossChoose){
         if (photo === bossChoose[2]){
                 photo.onclick = function () {
